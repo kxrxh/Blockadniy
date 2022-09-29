@@ -1,13 +1,15 @@
 import {Marker, MarkerLayout} from "yandex-map-react";
+import {headLine, highlight} from "../constants/constants";
 
 export function MyMarker({key, lat, lon}) {
     const markerStyles = {
         width: '40px',
         height: '40px',
         overflow: 'hidden',
-        border: '2px solid black',
-        background: '#FFF',
-        borderRadius: '5px'
+        border: '3px solid',
+        borderColor: highlight,
+        background: headLine,
+        borderRadius: '10px'
     };
     return (
         <Marker key={`marker_${key}`} lat={lat} lon={lon} onClick={() => console.log("click")}>
