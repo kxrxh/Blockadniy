@@ -47,7 +47,6 @@ function InfoDialog({state, setState}) {
                 </DialogContentText>
                 <Typography sx={{marginTop: '150px', marginBottom: '15px'}}>
                     Автор: Пархоменко Кирилл
-
                 </Typography>
                 <Typography sx={{width: '40%', marginBottom: '15px'}}>
                     Национальный исследовательский университет ИТМО, ПИиКТ, P3112,

@@ -22,7 +22,7 @@ export default function MonumentCard({monumentInfo, state, changeState}) {
             </Box>
             <DialogContent sx={{display: 'flow',}}>
                 <img src={monumentInfo['img']} alt={'img'} style={{width: '60%', height: '40%', textAlign: 'center'}}/>
-                <DialogContentText sx={{marginTop: '100px', position: 'center'}}>
+                <DialogContentText sx={{marginTop: '100px'}}>
                     {monumentInfo['info']}
                 </DialogContentText>
             </DialogContent>
