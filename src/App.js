@@ -1,13 +1,11 @@
-import './App.css';
-import {YanMap} from "./components/YanMap";
-import AppHeadBar from "./components/AppBar";
-import getAllPoints from "./database/supabase";
+import YanMap from "./components/YanMap";
+import MyAppBar from "./components/MyAppBar";
 
 function App() {
     const ITMOpos = [59.957023, 30.308154];
     return (
         <div>
-            <AppHeadBar/>
+            <MyAppBar/>
             <YanMap center={ITMOpos} zoom={18}/>
         </div>
     );

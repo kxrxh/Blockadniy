@@ -1,9 +1,9 @@
 import {AppBar, Button, Toolbar, Typography} from "@mui/material";
 import {background, buttons, buttonText} from "../constants/constants";
 import {useState} from "react";
-import {InfoDialog} from "./InfoDialog";
+import InfoDialog from "./InfoDialog";
 
-export default function AppHeadBar() {
+function MyAppBar() {
     const [dialogState, setDialogState] = useState(false);
     const changeState = (state) => {
         setDialogState(state);
@@ -28,3 +28,5 @@ export default function AppHeadBar() {
         </div>
     );
 }
+
+export default MyAppBar;

@@ -1,0 +1,16 @@
+.hlink a {
+    color: #140d0b;
+    text-decoration: none;
+}
+
+/* visited link */
+.hlink a:visited {
+    color: #140d0b;
+
+}
+
+/* mouse over link */
+.hlink a:hover {
+    color: #ffc0ad;
+
+}
