@@ -1,7 +1,7 @@
 import {Marker, MarkerLayout} from "yandex-map-react";
-import {headLine, pointsImg} from "../constants/constants";
+import {headLine} from "../constants/constants";
 
-export function MyMarker({lat, lon, id}) {
+export function MyMarker({data}) {
     const markerStyles = {
         width: '40px',
         height: '40px',
@@ -12,10 +12,11 @@ export function MyMarker({lat, lon, id}) {
         borderRadius: '10px',
     };
     return (
-        <Marker key={`marker_${id}`} lat={lat} lon={lon} onClick={() => console.log("click")}>
+        <Marker key={`marker_${data['id']}`} lat={data['pos'][0]} lon={data['pos'][1]}
+                onClick={() => console.log("click")}>
             <MarkerLayout>
                 <div style={markerStyles}>
-                    <img src={pointsImg[id]} width="50px" height="40px" alt={"t"}/>
+                    <img src={data['img']} width="50px" height="40px" alt={"t"}/>
                 </div>
             </MarkerLayout>
         </Marker>

@@ -1,8 +1,8 @@
 export const points = [
     [59.980704, 30.510192], // Ржевская площадь, 1
     [59.940258, 30.289089], // 2-я линия Васильевского острова, 13 — квартира Тани Савичевой
-    [59.866319, 30.321986], //Московский проспект — павильон метро "Парк Победы"
-    [59.936296, 30.333116], //  Итальянская улица, 13 / площадь Островского, 6 — Театр музыкальной комедии
+    [59.866319, 30.321986], // Московский проспект — павильон метро "Парк Победы"
+    [59.936296, 30.333116], // Итальянская улица, 13 / площадь Островского, 6 — Театр музыкальной комедии
     [59.951512, 30.308694], // Александровский парк, 1 — Ленинградский зоопарк
     [59.962566, 30.310352], // Большая Пушкарская улица, 37 (дом Бенуа) — квартира Дмитрия Шостаковича
     [59.936039, 30.331714], // Михайловская улица, 2 — Ленинградская филармония
@@ -20,10 +20,10 @@ export const points = [
     [59.936070, 30.334957] // Итальянская улица, 19 — Театр имени В. Ф. Комиссаржевской
 ]
 
-export const pointsImg = [
+const pointsImg = [
     "https://peterburg.center/sites/default/files/muka_ot_rzhevki_na_hlebozavod_1942.jpg", // Ржевская площадь, 1
     "https://peterburg.center/sites/default/files/tanya_savicheva_memorial_plaque_saint_petersburg_1.jpg", // 2-я линия Васильевского острова, 13 — квартира Тани Савичевой
-    "https://peterburg.center/sites/default/files/metro_spb_line2_park_pobedy_pavilion_0.jpg", //Московский проспект — павильон метро "Парк Победы"
+    "https://peterburg.center/sites/default/files/metro_spb_line2_park_pobedy_pavilion_0.jpg", // Московский проспект — павильон метро "Парк Победы"
     "https://peterburg.center/sites/default/files/teatr_muzkomedii_0.jpg", //  Итальянская улица, 13 / площадь Островского, 6 — Театр музыкальной комедии
     "https://peterburg.center/sites/default/files/leningradskiy_zoopark_2.jpg", // Александровский парк, 1 — Ленинградский зоопарк
     "https://peterburg.center/sites/default/files/kvartira_shostakovicha_0.jpg", // Большая Пушкарская улица, 37 (дом Бенуа) — квартира Дмитрия Шостаковича

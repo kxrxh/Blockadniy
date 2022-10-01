@@ -1,8 +1,16 @@
-import {points} from "../constants/constants";
 import {Map} from "yandex-map-react";
+import getAllPoints from "../database/supabase";
+import {useEffect, useState} from "react";
 import {MyMarker} from "./MyMarker";
 
 export function YanMap({center, zoom}) {
+    const [data, setData] = useState([])
+    useEffect(() => {
+        const get = async function (callback) {
+            setData(await getAllPoints())
+        }
+        get().catch((err) => console.error(err));
+    }, [])
 
     return (
         <Map onAPIAvailable={() => {
@@ -11,8 +19,8 @@ export function YanMap({center, zoom}) {
              state={{controls: ['zoomControl', 'rulerControl', 'typeSelector']}}
              center={center}
              zoom={zoom}>
-            {points.map(([lat, lon], i) => (
-                <MyMarker lat={lat} lon={lon} id={i}/>
+            {data.map((i) => (
+                <MyMarker key={i['id']} data={i}/>
             ))}
         </Map>
     );
