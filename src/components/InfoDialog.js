@@ -52,10 +52,10 @@ function InfoDialog({state, setState}) {
                     Национальный исследовательский университет ИТМО, ПИиКТ, P3112,
                     367468
                 </Typography>
-                <div className='hlink'>
+                <Typography className='hlink'>
                     <a href="https://github.com/KXRXH" target="_blank">Мой Github</a> | <a
                     href="https://github.com/KXRXH/Blockadniy" target="_blank">Исходный код</a>
-                </div>
+                </Typography>
             </DialogContent>
         </Dialog>
     );

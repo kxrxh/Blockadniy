@@ -1,6 +1,9 @@
 import {Box, Dialog, DialogContent, DialogContentText, DialogTitle, IconButton} from "@mui/material";
 import {highlight} from "../constants/constants";
 import CloseIcon from "@mui/icons-material/Close";
+import ImageSlides from "./ImageSlides";
+import '@splidejs/react-splide/css';
+
 
 export default function MonumentCard({monumentInfo, state, changeState}) {
     return (
@@ -8,7 +11,7 @@ export default function MonumentCard({monumentInfo, state, changeState}) {
             open={state}
             onClose={() => changeState(false)}
             fullWidth={true}
-            maxWidth="md"
+            maxWidth="lg"
             sx={{backgroundColor: 'transparent', maxWidth: '100%',}}>
             <Box sx={{overflowX: 'hidden'}}>
                 <Box sx={{display: 'flex'}}>
@@ -16,15 +19,16 @@ export default function MonumentCard({monumentInfo, state, changeState}) {
                     <IconButton
                         sx={{marginLeft: 'auto', marginRight: '5px', color: highlight}}
                         size="large"
-                        edge='end'
                         onClick={() => changeState(false)}
                         variant="contained"><CloseIcon/>
                     </IconButton>
                 </Box>
                 <DialogContent sx={{display: 'flow', maxWidth: '100%'}}>
-                    <img src={monumentInfo['img']} alt={'img'}
-                         style={{width: '40%', height: '30%', textAlign: 'center'}}/>
-                    <DialogContentText sx={{marginTop: '100px'}}>
+                    <ImageSlides data={monumentInfo}/>
+                    <DialogContentText sx={{marginTop: '20px'}}>
+                        Адрес: {monumentInfo['address']}
+                    </DialogContentText>
+                    <DialogContentText sx={{marginTop: '80px'}}>
                         {monumentInfo['info']}
                     </DialogContentText>
                 </DialogContent>
