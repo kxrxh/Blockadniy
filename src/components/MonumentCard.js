@@ -3,6 +3,7 @@ import {highlight} from "../constants/constants";
 import CloseIcon from "@mui/icons-material/Close";
 import ImageSlides from "./ImageSlides";
 import '@splidejs/react-splide/css';
+import MapLink from "./MapLink";
 
 
 export default function MonumentCard({monumentInfo, state, changeState}) {
@@ -27,6 +28,7 @@ export default function MonumentCard({monumentInfo, state, changeState}) {
                     <ImageSlides data={monumentInfo}/>
                     <DialogContentText sx={{marginTop: '20px'}}>
                         Адрес: {monumentInfo['address']}
+                        <MapLink latAndLon={monumentInfo['pos']} />
                     </DialogContentText>
                     <DialogContentText sx={{marginTop: '80px'}}>
                         {monumentInfo['info']}
