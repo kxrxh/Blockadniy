@@ -31,19 +31,22 @@ function InfoDialog({state, setState}) {
             </Box>
             <DialogContent sx={{display: 'flow'}}>
                 <DialogContentText>
-                    Данный сайт был разработан для ознакомлением с достопримечательностями Санкт-Петербурга,
-                    которые связаны с блокадой Ленинграда.
+                    Даеыей сайт был разработан для ознакомления с различными местами города Санкт-Петербурга, которые связаны с блокадой ленинграда.
                 </DialogContentText>
                 <DialogContentText>
                     (8 сент. 1941 г. – 27 янв. 1944 г.).
                 </DialogContentText>
+                <DialogContentText>
+                    На сайте представлены как достопримечательности, так и места из воспоминаний обычных людей.
+                </DialogContentText>
                 <DialogContentText sx={{marginTop: '50px'}}>
-                    This site was created to get acquainted with the sights of St. Petersburg, which are associated
-                    with
-                    the blockade of Leningrad.
+                    This site was created in order to acquaint you with various places in the city of St. Petersburg, which are associated with the blockade of Leningrad.
                 </DialogContentText>
                 <DialogContentText>
                     (September 8, 1941 – January 27, 1944).
+                </DialogContentText>
+                <DialogContentText>
+                    The site presents both sights and places from the memories of ordinary people.
                 </DialogContentText>
                 <Typography sx={{marginTop: '150px', marginBottom: '15px'}}>
                     Автор: Пархоменко Кирилл
@@ -54,7 +57,9 @@ function InfoDialog({state, setState}) {
                 </Typography>
                 <Typography className='hlink'>
                     <a href="https://github.com/KXRXH" target="_blank">Мой Github</a> | <a
-                    href="https://github.com/KXRXH/Blockadniy" target="_blank">Исходный код</a>
+                    href="https://github.com/KXRXH/Blockadniy" target="_blank">Исходный код</a> | <a
+                    href="https://docs.google.com/spreadsheets/d/1e_AYi7VWuuY7DVqejHwUu4cYFHxz1AZqbn6YSXxVv4w/edit?usp=sharing"
+                    target="_blank">Источники</a>
                 </Typography>
             </DialogContent>
         </Dialog>

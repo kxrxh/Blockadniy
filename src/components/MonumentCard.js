@@ -31,7 +31,7 @@ export default function MonumentCard({monumentInfo, state, changeState}) {
                         <MapLink latAndLon={monumentInfo['pos']} />
                     </DialogContentText>
                     <DialogContentText sx={{marginTop: '80px'}}>
-                        {monumentInfo['info']}
+                        <div dangerouslySetInnerHTML={{ __html: monumentInfo['info'] }} />
                     </DialogContentText>
                 </DialogContent>
             </Box>
