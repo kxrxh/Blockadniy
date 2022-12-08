@@ -28,10 +28,10 @@ export default function MonumentCard({monumentInfo, state, changeState}) {
                     <ImageSlides data={monumentInfo}/>
                     <DialogContentText sx={{marginTop: '20px'}}>
                         Адрес: {monumentInfo['address']}
-                        <MapLink latAndLon={monumentInfo['pos']} />
+                        <MapLink latAndLon={monumentInfo['pos']}/>
                     </DialogContentText>
                     <DialogContentText sx={{marginTop: '80px'}}>
-                        <div dangerouslySetInnerHTML={{ __html: monumentInfo['info'] }} />
+                        <div dangerouslySetInnerHTML={{__html: monumentInfo['info']}}/>
                     </DialogContentText>
                 </DialogContent>
             </Box>

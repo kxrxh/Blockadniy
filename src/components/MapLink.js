@@ -7,10 +7,10 @@ import {buttons, buttonsHover, buttonText} from "../constants/constants";
 function MapLink({latAndLon}) {
     return (
         <a className="map-link" href={GetYandexMapRouteUrl(latAndLon)}
-           target="_blank">
+           target="_blank" rel="noreferrer">
             <Button startIcon={<MapIcon/>} variant="outlined" size='small'
                     sx={{
-                        fontSize:'12px',
+                        fontSize: '12px',
                         marginLeft: '15px',
                         color: buttonText,
                         borderColor: buttonText,
