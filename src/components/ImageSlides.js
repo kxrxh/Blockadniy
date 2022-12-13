@@ -1,7 +1,7 @@
 import '../styles/slide-img.css'
 import {Splide} from "@splidejs/react-splide";
-import {buttons} from "../constants/constants";
 import SlideImage from "./SlideImage";
+import {marker_outline} from "../constants/constants";
 
 function ImageSlides({data}) {
     return (
@@ -17,8 +17,8 @@ function ImageSlides({data}) {
                     width: '60%',
                     height: '50%',
                     maxHeight: '700px',
-                    outline: `5px solid ${buttons}`,
-                    border: `5px solid white`
+                    outline: `5px solid ${marker_outline}`,
+                    border: `5px solid white`,
                 }}
             >
                 {data['imgs'].map((img, index) => (

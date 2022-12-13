@@ -2,7 +2,7 @@ import {GetYandexMapRouteUrl} from "../utils/utils";
 import "../styles/map-link.css"
 import MapIcon from '@mui/icons-material/Map';
 import {Button} from "@mui/material";
-import {buttons, buttonsHover, buttonText} from "../constants/constants";
+import {button, buttonText, hover_button} from "../constants/constants";
 
 function MapLink({latAndLon}) {
     return (
@@ -15,9 +15,9 @@ function MapLink({latAndLon}) {
                         color: buttonText,
                         borderColor: buttonText,
                         borderWidth: '1px',
-                        backgroundColor: buttons,
+                        backgroundColor: button,
                         ":hover": {
-                            borderColor: buttonText, backgroundColor: buttonsHover
+                            borderColor: buttonText, backgroundColor: hover_button
                         }
                     }}>
                 На

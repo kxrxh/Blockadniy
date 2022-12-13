@@ -1,7 +1,8 @@
 import {Box, Dialog, DialogContent, DialogContentText, DialogTitle, IconButton} from "@mui/material";
-import {highlight} from "../constants/constants";
 import CloseIcon from "@mui/icons-material/Close";
 import ImageSlides from "./ImageSlides";
+import "../styles/boldtext.css"
+import "../styles/description.css"
 import '@splidejs/react-splide/css';
 import MapLink from "./MapLink";
 
@@ -16,9 +17,10 @@ export default function MonumentCard({monumentInfo, state, changeState}) {
             sx={{backgroundColor: 'transparent', maxWidth: '100%',}}>
             <Box sx={{overflowX: 'hidden'}}>
                 <Box sx={{display: 'flex'}}>
-                    <DialogTitle sx={{maxWidth: '70%'}}>{monumentInfo['title']}</DialogTitle>
+                    <DialogTitle sx={{maxWidth: '70%'}}>{<text
+                        className="bold-text">{monumentInfo['title']}</text>}</DialogTitle>
                     <IconButton
-                        sx={{marginLeft: 'auto', marginRight: '5px', color: highlight}}
+                        sx={{marginLeft: 'auto', marginRight: '5px'}}
                         size="large"
                         onClick={() => changeState(false)}
                         variant="contained"><CloseIcon/>
@@ -31,7 +33,7 @@ export default function MonumentCard({monumentInfo, state, changeState}) {
                         <MapLink latAndLon={monumentInfo['pos']}/>
                     </DialogContentText>
                     <DialogContentText sx={{marginTop: '80px'}}>
-                        <div dangerouslySetInnerHTML={{__html: monumentInfo['info']}}/>
+                        <div className="description" dangerouslySetInnerHTML={{__html: monumentInfo['info']}}/>
                     </DialogContentText>
                 </DialogContent>
             </Box>

@@ -1,5 +1,5 @@
 import {Marker, MarkerLayout} from "yandex-map-react";
-import {buttons, headLine} from "../constants/constants";
+import {marker_border, marker_outline} from "../constants/constants";
 import {useState} from "react";
 import MonumentCard from "./MonumentCard";
 
@@ -14,10 +14,10 @@ export default function MyMarker({data}) {
                         width: '40px',
                         height: '40px',
                         overflow: 'hidden',
-                        outline: `3px solid ${buttons}`,
-                        border: `2px solid ${headLine}`,
-                        background: headLine,
-                        borderRadius: '10px'
+                        outline: `3px solid ${marker_outline}`,
+                        border: `2px solid ${marker_border}`,
+                        background: `white`,
+                        borderRadius: '50px'
                     }}>
                         <img src={data['preview']} width="50px" height="40px" alt={"t"}/>
                     </div>

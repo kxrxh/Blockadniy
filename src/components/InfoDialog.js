@@ -1,7 +1,9 @@
 import "../styles/hlink.css"
-import {Box, Dialog, DialogContent, DialogContentText, DialogTitle, IconButton, Typography} from "@mui/material";
+import {Box, Dialog, DialogContent, DialogTitle, IconButton, Typography} from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
-import {highlight} from "../constants/constants";
+import "../styles/boldtext.css"
+import "../styles/image_card.css"
+import {highlight, ITMO_LOGO} from "../constants/constants";
 
 function InfoDialog({state, setState}) {
     return (<Dialog
@@ -11,7 +13,7 @@ function InfoDialog({state, setState}) {
         maxWidth="lg"
         sx={{backgroundColor: 'transparent'}}>
         <Box sx={{display: 'flex'}}>
-            <DialogTitle>О сайте</DialogTitle>
+            <DialogTitle className="bold-text">О сайте</DialogTitle>
             <IconButton
                 sx={{marginLeft: 'auto', marginRight: '5px', color: highlight}}
                 size="large"
@@ -21,38 +23,31 @@ function InfoDialog({state, setState}) {
             </IconButton>
         </Box>
         <DialogContent sx={{display: 'flow'}}>
-            <DialogContentText>
+            <Typography>
                 Данный сайт был разработан для ознакомления с различными местами города Санкт-Петербурга, которые
-                связаны с блокадой ленинграда.
-            </DialogContentText>
-            <DialogContentText>
-                (8 сент. 1941 г. – 27 янв. 1944 г.).
-            </DialogContentText>
-            <DialogContentText>
-                На карте представлены месте, упоминание которых встречается в записях жителей города.
-            </DialogContentText>
-            <DialogContentText sx={{marginTop: '50px'}}>
-                This site was created in order to acquaint you with various places in the city of St. Petersburg,
-                which are associated with the blockade of Leningrad.
-            </DialogContentText>
-            <DialogContentText>
-                (September 8, 1941 – January 27, 1944).
-            </DialogContentText>
-            <DialogContentText>
-                The map shows the places mentioned in the records of the inhabitants of the city.
-            </DialogContentText>
-            <Typography sx={{marginTop: '150px', marginBottom: '15px'}}>
-                Автор: Пархоменко Кирилл
+                связаны с блокадой ленинграда. (8 сент. 1941 г. – 27 янв. 1944 г.).
             </Typography>
-            <Typography sx={{width: '40%', marginBottom: '15px'}}>
-                Национальный исследовательский университет ИТМО, ПИиКТ, P3112,
-                367468
+
+            <Typography sx={{marginTop: '30px'}}>
+                На карте представлены месте, упоминание которых встречается в записях жителей города.
+            </Typography>
+
+            <Typography sx={{marginTop: '30px'}} className='hlink'>
+                Все материалы (записи из дневников, воспоминания) были взяты с сайта <a
+                href="https://prozhito.org/" target="_blank" rel="noreferrer">Прожито</a>.
+            </Typography>
+            <div className="image">
+                <img src={ITMO_LOGO} alt={"itmo_logo"}/>
+            </div>
+            <Typography sx={{marginTop: '60px', marginBottom: '15px'}}>
+                Автор: Пархоменко Кирилл Александрович
+            </Typography>
+            <Typography sx={{marginBottom: '15px'}}>
+                Национальный исследовательский университет ИТМО, ПИиКТ
             </Typography>
             <Typography className='hlink'>
-                <a href="https://github.com/KXRXH" target="_blank" rel="noreferrer">Мой Github</a> | <a
-                href="https://github.com/KXRXH/Blockadniy" target="_blank" rel="noreferrer">Исходный код</a> | <a
-                href="https://docs.google.com/spreadsheets/d/1e_AYi7VWuuY7DVqejHwUu4cYFHxz1AZqbn6YSXxVv4w/edit?usp=sharing"
-                target="_blank" rel="noreferrer">Источники</a>
+                <a href="https://github.com/KXRXH" target="_blank" rel="noreferrer">Github автора</a> | <a
+                href="https://github.com/KXRXH/Blockadniy" target="_blank" rel="noreferrer">Исходный код</a>
             </Typography>
         </DialogContent>
     </Dialog>);

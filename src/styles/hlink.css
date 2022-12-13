@@ -1,16 +1,17 @@
 .hlink a {
-    color: #140d0b;
+    color: #256D85;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* visited link */
 .hlink a:visited {
-    color: #140d0b;
+    color: #256D85;
 
 }
 
 /* mouse over link */
 .hlink a:hover {
-    color: #ffc0ad;
+    color: #88BDBC;
 
 }
