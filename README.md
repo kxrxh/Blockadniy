@@ -3,4 +3,4 @@
 
 [**Ссылка на сайт**](https://blockadniy.vercel.app/)
 
-![img.png](readme-src/img.png)
+![img.png](readme-src/image.png)
