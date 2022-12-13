@@ -25,9 +25,9 @@ function InfoDialog({state, setState}) {
         <DialogContent sx={{display: 'flow'}}>
             <Typography>
                 Данный сайт был разработан для ознакомления с различными местами города Санкт-Петербурга, которые
-                связаны с блокадой ленинграда. (8 сент. 1941 г. – 27 янв. 1944 г.).
+                связаны с блокадой ленинграда.
             </Typography>
-
+            <Typography className="bold-text">(8 сент. 1941 г. – 27 янв. 1944 г.).</Typography>
             <Typography sx={{marginTop: '30px'}}>
                 На карте представлены месте, упоминание которых встречается в записях жителей города.
             </Typography>
