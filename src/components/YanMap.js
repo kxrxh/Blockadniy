@@ -1,7 +1,7 @@
 import {Map} from "yandex-map-react";
 import {useEffect, useState} from "react";
 import MyMarker from "./MyMarker";
-import GetAllPoints from "../database/supabase";
+import {GetAllPoints} from "../database/supabase";
 
 function YanMap({center, zoom}) {
     const [data, setData] = useState([])
