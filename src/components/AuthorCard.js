@@ -35,7 +35,7 @@ export default function AuthorCard({authorInfo, state, changeState}) {
                     Пол: {authorInfo['sex']}
                 </DialogContentText>
                 <DialogContentText sx={{marginTop: '20px'}}>
-                    <p>{authorInfo['bio']}</p>
+                    <div className="description" dangerouslySetInnerHTML={{__html: authorInfo['bio']}}/>
                 </DialogContentText>
             </DialogContent>
         </Box>
