@@ -33,7 +33,7 @@ function InfoDialog({state, setState}) {
             </Typography>
 
             <Typography sx={{marginTop: '30px'}} className='hlink'>
-                Все материалы (записи из дневников, воспоминания) были взяты с сайта <a
+                Записи из дневников, воспоминания, изображения авторов записей были взяты с сайта <a
                 href="https://prozhito.org/" target="_blank" rel="noreferrer">Прожито</a>.
             </Typography>
             <div className="image">
